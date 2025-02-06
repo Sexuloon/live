@@ -100,7 +100,7 @@ export default function KnowledgeHub() {
         <section className="container mx-auto px-6 lg:px-12 py-16">
           <h2 className="text-3xl font-bold text-[#E6DCC5] mb-8">Anonymous Q&A</h2>
           <p className="text-[#E6DCC5] mb-6">
-            Ask a question anonymously and get expert advice.
+            Ask a question anonymously and get expert advice..
           </p>
           <div className="text-center">
             <Link href="/contactus">
