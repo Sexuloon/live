@@ -6,18 +6,20 @@ export function About() {
     <section className="py-16 bg-[#131A14] text-white">
       <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center">
         
-        {/* Left Side - Image */}
-        <div className="w-full lg:w-1/2 mb-8 lg:mb-0 relative h-[350px] lg:h-[450px]">
-          <Image
-            src="/about-image.jpg" // ✅ Replace with the actual image path in "public"
-            alt="About Sexuloon"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-xl shadow-lg"
-          />
+        
+        <div className="w-full lg:w-1/2 mb-8 lg:mb-0 relative p-2 rounded-xl bg-[#131A14]">
+          <div className="relative w-full h-[350px] lg:h-[450px] rounded-xl overflow-hidden">
+            <Image
+              src="/image1.png" 
+              alt="About Sexuloon"
+              layout="fill"
+              objectFit="contain" 
+              className="rounded-xl"
+            />
+          </div>
         </div>
 
-        {/* Right Side - Content */}
+        
         <div className="w-full lg:w-1/2 text-center lg:text-left bg-[#363B32] p-8 rounded-xl shadow-lg">
           <h2 className="text-4xl font-extrabold text-[#E6DCC5] mb-6">
             About <span className="text-[#E91E63]">Sexuloon</span>
@@ -36,7 +38,7 @@ export function About() {
             <span className="font-semibold text-[#2196F3]"> we are here to support your journey</span>.
           </p>
 
-          {/* Call to Action Button */}
+          
           <a 
             href="/learn-more" 
             className="px-6 py-3 bg-[#E91E63] text-white font-medium rounded-lg shadow-md 

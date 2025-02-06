@@ -11,9 +11,9 @@ export function CTA() {
           Consult with our experts and find the right solution for you.
         </p>
 
-        {/* CTA Button */}
+        
         <a
-          href="/contact"
+          href="/contactus"
           className="inline-block px-8 py-4 bg-[#E91E63] text-white text-lg font-semibold rounded-full shadow-md 
           transition duration-300 transform hover:scale-105 hover:bg-[#C2185B]"
         >

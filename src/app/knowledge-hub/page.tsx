@@ -2,9 +2,7 @@
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-// import { Footer } from "./components/Footer";
 import { Footer } from "../components/Footer";
-// import { Header } from "./components/Header";
 import { Header } from "../components/Header";
 
 const blogs = [
@@ -49,7 +47,7 @@ export default function KnowledgeHub() {
     return (
       <div className="min-h-screen bg-[#131A14] text-white">
         <Header />
-        {/* Hero Section */}
+        
         <section className="text-center py-16 bg-[#4D5745]">
           <h1 className="text-4xl font-bold text-[#E6DCC5] mb-4">Knowledge Hub</h1>
           <p className="text-lg text-[#E6DCC5]">Learn more about mens health through expert articles and FAQs.</p>
@@ -62,7 +60,7 @@ export default function KnowledgeHub() {
           </div>
         </section>
   
-        {/* Blog Section */}
+        
         <section className="container mx-auto px-6 lg:px-12 py-16">
           <h2 className="text-3xl font-bold text-[#E6DCC5] mb-8">Latest Articles</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -78,7 +76,7 @@ export default function KnowledgeHub() {
           </div>
         </section>
   
-        {/* FAQ Section */}
+        
         <section className="container mx-auto px-6 lg:px-12 py-16">
           <h2 className="text-3xl font-bold text-[#E6DCC5] mb-8">Frequently Asked Questions</h2>
           <div className="space-y-4">
@@ -98,14 +96,14 @@ export default function KnowledgeHub() {
           </div>
         </section>
   
-        {/* Anonymous Q&A Section */}
+        
         <section className="container mx-auto px-6 lg:px-12 py-16">
           <h2 className="text-3xl font-bold text-[#E6DCC5] mb-8">Anonymous Q&A</h2>
           <p className="text-[#E6DCC5] mb-6">
             Ask a question anonymously and get expert advice.
           </p>
           <div className="text-center">
-            <Link href="/ask-question">
+            <Link href="/contactus">
               <button className="px-6 py-3 bg-[#E91E63] text-white font-semibold rounded-lg hover:bg-[#C2185B] transition">
                 Ask a Question
               </button>
@@ -113,11 +111,11 @@ export default function KnowledgeHub() {
           </div>
         </section>
   
-        {/* CTA Section */}
+        
         <section className="text-center py-16 bg-[#4D5745]">
           <h2 className="text-3xl font-bold text-[#E6DCC5] mb-4">Need Personalized Help?</h2>
           <p className="text-lg text-[#E6DCC5] mb-6">Consult with our experts for tailored advice.</p>
-          <Link href="/consult">
+          <Link href="/contactus">
             <button className="px-6 py-3 bg-[#E91E63] text-white font-semibold rounded-lg hover:bg-[#C2185B] transition">
               Talk to a Doctor
             </button>
