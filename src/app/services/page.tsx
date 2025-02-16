@@ -1,6 +1,7 @@
 "use client";
 
 import { Brain, HeartPulse, ShieldCheck, UserCheck } from "lucide-react";
+import Link from "next/link";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 
@@ -23,7 +24,9 @@ export default function Services() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-[#363B32] p-6 rounded-xl shadow-lg text-center">
                 <HeartPulse className="text-[#E91E63] w-12 h-12 mx-auto mb-4" />
+                <Link href="/all_products" passHref>
                 <h3 className="text-2xl font-semibold text-[#E91E63] mb-2">Premature Ejaculation</h3>
+                </Link>
                 <p className="text-[#E6DCC5]">
                   Solutions to manage rapid or uncontrollable ejaculation, helping improve control and confidence.
                 </p>
@@ -31,7 +34,9 @@ export default function Services() {
 
               <div className="bg-[#363B32] p-6 rounded-xl shadow-lg text-center">
                 <Brain className="text-[#E91E63] w-12 h-12 mx-auto mb-4" />
+                <Link href="/all_products" passHref>
                 <h3 className="text-2xl font-semibold text-[#E91E63] mb-2">Erectile Dysfunction</h3>
+                </Link>
                 <p className="text-[#E6DCC5]">
                   Treatment options to address difficulties in achieving or maintaining an erection.
                 </p>
@@ -39,7 +44,9 @@ export default function Services() {
 
               <div className="bg-[#363B32] p-6 rounded-xl shadow-lg text-center">
                 <ShieldCheck className="text-[#E91E63] w-12 h-12 mx-auto mb-4" />
+                <Link href="/all_products" passHref>
                 <h3 className="text-2xl font-semibold text-[#E91E63] mb-2">Low Testosterone</h3>
+                </Link>
                 <p className="text-[#E6DCC5]">
                   Managing hormonal imbalances to boost energy, mood, and sexual health.
                 </p>
@@ -47,7 +54,9 @@ export default function Services() {
 
               <div className="bg-[#363B32] p-6 rounded-xl shadow-lg text-center">
                 <UserCheck className="text-[#E91E63] w-12 h-12 mx-auto mb-4" />
+                <Link href="/all_products" passHref>
                 <h3 className="text-2xl font-semibold text-[#E91E63] mb-2">Porn Addiction</h3>
+                </Link>
                 <p className="text-[#E6DCC5]">
                   Support for overcoming compulsive behaviors to improve mental and sexual well-being.
                 </p>

@@ -41,6 +41,7 @@ export const Header = () => {
             <Link href="/services" className="hover:text-[#A8B19E]">Services</Link>
             <Link href="/About" className="hover:text-[#A8B19E]">About Us</Link>
             <Link href="/knowledge-hub" className="hover:text-[#A8B19E]">Knowledge Hub</Link>
+            <Link href="/all_products" className="hover:text-[#A8B19E]">All Products</Link>
             <Link href="/contactus" className="hover:text-[#A8B19E]">Contact</Link>
             <Link
               href="/contactus"
