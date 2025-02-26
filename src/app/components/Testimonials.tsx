@@ -27,8 +27,8 @@ export function Testimonials() {
   return (
     <section className="py-16 bg-gradient-to-b from-[#131A14] to-[#4D5745] text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 text-center">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-[#E6DCC5] mb-8 sm:mb-12">
-          What Our <span className="text-[#E91E63]">Clients</span> Say
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-[hsl(42,40%,84%)] mb-8 sm:mb-12">
+          What Our <span className="text-[#E91E63]">Patients</span> Say
         </h2>
 
         

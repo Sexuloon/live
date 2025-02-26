@@ -61,66 +61,70 @@ export default function KnowledgeHub() {
         </section>
   
         
-        <section className="container mx-auto px-6 lg:px-12 py-16">
-          <h2 className="text-3xl font-bold text-[#E6DCC5] mb-8">Latest Articles</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogs.map((blog) => (
-              <div key={blog.id} className="bg-[#363B32] p-6 rounded-xl shadow-lg hover:scale-105 transition duration-300">
-                <h3 className="text-xl font-semibold text-[#E6DCC5]">{blog.title}</h3>
-                <p className="text-[#E6DCC5] mt-2">{blog.description}</p>
-                <Link href={blog.link} className="mt-4 inline-block text-[#E91E63] font-medium hover:underline">
-                  Read More →
-                </Link>
-              </div>
-            ))}
-          </div>
-        </section>
+        <section id="articles" className="container mx-auto px-6 lg:px-12 py-16">
+  <h2 className="text-3xl font-bold text-[#E6DCC5] mb-8">Latest Articles</h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {blogs.map((blog) => (
+      <div key={blog.id} className="bg-[#363B32] p-6 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+        <h3 className="text-xl font-semibold text-[#E6DCC5]">{blog.title}</h3>
+        <p className="text-[#E6DCC5] mt-2">{blog.description}</p>
+        <Link href={blog.link} className="mt-4 inline-block text-[#E91E63] font-medium hover:underline">
+          Read More →
+        </Link>
+      </div>
+    ))}
+  </div>
+</section>
+
   
         
-        <section className="container mx-auto px-6 lg:px-12 py-16">
-          <h2 className="text-3xl font-bold text-[#E6DCC5] mb-8">Frequently Asked Questions</h2>
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-[#363B32] p-4 rounded-lg cursor-pointer"
-                onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg text-[#E6DCC5]">{faq.question}</h3>
-                  <ChevronDown className={`text-[#E91E63] transition-transform ${openFAQ === index ? "rotate-180" : ""}`} />
-                </div>
-                {openFAQ === index && <p className="text-[#E6DCC5] mt-2">{faq.answer}</p>}
-              </div>
-            ))}
-          </div>
-        </section>
+<section id="faq" className="container mx-auto px-6 lg:px-12 py-16">
+  <h2 className="text-3xl font-bold text-[#E6DCC5] mb-8">Frequently Asked Questions</h2>
+  <div className="space-y-4">
+    {faqs.map((faq, index) => (
+      <div
+        key={index}
+        className="bg-[#363B32] p-4 rounded-lg cursor-pointer"
+        onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
+      >
+        <div className="flex justify-between items-center">
+          <h3 className="text-lg text-[#E6DCC5]">{faq.question}</h3>
+          <ChevronDown className={`text-[#E91E63] transition-transform ${openFAQ === index ? "rotate-180" : ""}`} />
+        </div>
+        {openFAQ === index && <p className="text-[#E6DCC5] mt-2">{faq.answer}</p>}
+      </div>
+    ))}
+  </div>
+</section>
+
   
         
-        <section className="container mx-auto px-6 lg:px-12 py-16">
-          <h2 className="text-3xl font-bold text-[#E6DCC5] mb-8">Anonymous Q&A</h2>
-          <p className="text-[#E6DCC5] mb-6">
-            Ask a question anonymously and get expert advice..
-          </p>
-          <div className="text-center">
-            <Link href="/contactus">
-              <button className="px-6 py-3 bg-[#E91E63] text-white font-semibold rounded-lg hover:bg-[#C2185B] transition">
-                Ask a Question
-              </button>
-            </Link>
-          </div>
-        </section>
+<section id="qa" className="container mx-auto px-6 lg:px-12 py-16">
+  <h2 className="text-3xl font-bold text-[#E6DCC5] mb-8">Anonymous Q&A</h2>
+  <p className="text-[#E6DCC5] mb-6">
+    Ask a question anonymously and get expert advice..
+  </p>
+  <div className="text-center">
+    <Link href="/contactus">
+      <button className="px-6 py-3 bg-[#E91E63] text-white font-semibold rounded-lg hover:bg-[#C2185B] transition">
+        Ask a Question
+      </button>
+    </Link>
+  </div>
+</section>
+
   
         
-        <section className="text-center py-16 bg-[#4D5745]">
-          <h2 className="text-3xl font-bold text-[#E6DCC5] mb-4">Need Personalized Help?</h2>
-          <p className="text-lg text-[#E6DCC5] mb-6">Consult with our experts for tailored advice.</p>
-          <Link href="/contactus">
-            <button className="px-6 py-3 bg-[#E91E63] text-white font-semibold rounded-lg hover:bg-[#C2185B] transition">
-              Talk to a Doctor
-            </button>
-          </Link>
-        </section>
+<section id="consult" className="text-center py-16 bg-[#4D5745]">
+  <h2 className="text-3xl font-bold text-[#E6DCC5] mb-4">Need Personalized Help?</h2>
+  <p className="text-lg text-[#E6DCC5] mb-6">Consult with our experts for tailored advice.</p>
+  <Link href="/contactus">
+    <button className="px-6 py-3 bg-[#E91E63] text-white font-semibold rounded-lg hover:bg-[#C2185B] transition">
+      Talk to a Doctor
+    </button>
+  </Link>
+</section>
+
         <Footer />
       </div>
     );

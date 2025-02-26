@@ -25,3 +25,27 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Ultra-Thin Scrollbar */
+.thin-scroll::-webkit-scrollbar {
+  width: 2px;  /* Super thin scrollbar */
+}
+
+.thin-scroll::-webkit-scrollbar-thumb {
+  background: #2E2E2E;  /* Dark grey to blend in */
+  border-radius: 10px;
+}
+
+.thin-scroll::-webkit-scrollbar-track {
+  background: transparent; /* Almost hidden track */
+}
+
+/* Hide scrollbar on non-hover states */
+.thin-scroll {
+  scrollbar-width: none; /* Firefox */
+}
+
+.thin-scroll:hover {
+  scrollbar-width: thin;
+}
+
